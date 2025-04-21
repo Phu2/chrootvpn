@@ -704,13 +704,13 @@ FirefoxJSONpolicy()
    cat <<-EOF14 > "$1/policies.json"
 	{
 	   "policies": {
-	               "ImportEnterpriseRoots": true,
-	               "Certificates": {
-	               "Install": [
-	                          "${CHROOT}/usr/bin/cshell/cert/CShell_Certificate.crt"
-	                          ]
-	                               }
-	               }
+	      "Certificates": {
+            "ImportEnterpriseRoots": true,
+	         "Install": [
+	            "${CHROOT}/usr/bin/cshell/cert/CShell_Certificate.crt"
+	         ]
+	      }
+	   }
 	}
 	EOF14
 }
